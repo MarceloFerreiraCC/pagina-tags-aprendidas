@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Aprendidadaa</title>
+</head>
+<body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ol>
+        <li>
+          <a href="#client-server">Entendendo Comunicação Client x Server</a>
+            <ol>
+              <li><a href="#client">O que são Clients?</a></li>
+              <li><a href="#server">O que são Servers?</a></li>
+            </ol>
+        </li>
+        <li>
+          <a href="#introducao-html">Introdução ao HTML na Prática</a>
+          <ol>
+            <li><a href="#estrutura-basica">Como é uma estrutura básica de um HTML?</a></li>
+            <li><a href="#tags-atributos">Falando sobre Tags e Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+          </ol>
+        </li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ol>
+
+    <h2 id="client-server">Entendendo Comunicação Client x Server</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>A estrutura <u><i>cliente-servidor</i></u> é um modelo de arquitetura de rede amplamente utilizado em ambientes de TI. 
+      Nesta abordagem, os computadores são divididos em dois grupos: <strong>servidores</strong>, que fornecem serviços ou recursos,
+       e <strong>clientes</strong>, que solicitam estes serviços e recursos, recebendo-os como respostas.</p>
+    <p>É importante mencionar que grande parte dos <i>serviços da Internet</i> <del>seguem</del> obedecem à arquitetura cliente-servidor. 
+      O servidor da web disponibiliza para o cliente os sites, que o cliente acessa através de seu navegador. 
+      Dessa forma, o servidor hospeda os dados que o cliente solicita através do navegador instalado em seu computador.</p>
+
+    <h3 id="client">O que são <i>Clients</i>?</h3>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p><strong><u>CONCEITO:</u> </strong>Em uma infraestrutura cliente-servidor, cliente é um dispositivo de computação, como desktops, 
+      laptops, smartphones, tablets ou aplicativos que, através de protocolos de rede se conectam a servidores para fazer uma 
+      solicitação de serviço ou recurso e aguarda a resposta.</p>
+
+    <h4>Aplicações Web</h4>
+    <p><i>Aplicações Web</i> são soluções criadas que possuem a internet como meio de comunicação
+      entre <u>Client x Server</u> não sendo necessário a sua instalação.</p>
+    
+    <h3 id="server">O que são <i>Servers</i>?</h3>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p><strong><u>CONCEITO:</u> </strong>É o componente do sistema que fornece os serviços ou recursos solicitados pelos clientes. 
+      Estes servidores podem ser um computador projetado especificamente para gerenciar e fornecer serviços aos clientes, ou ainda, 
+      um software que é executado em um servidor de rede.</p>
+
+    <h4>Servidor de Arquivos</h4>
+    <p><i>Servidor de Arquivos</i> são sistemas para armazenar e compartilhar uma grande quantidade de informações entre equipamentos 
+      e usuários, mantendo o gerenciamento centralizado.</p>
+    <h4>Servidor de E-mail</h4>
+    <p><i>Servidor de E-mail</i> são equipamentos configurados para armazenar e transferir e-mails através de redes locais ou via internet.</p>
+    <h4>Servidor Web</h4>
+    <p><i>Servidor Web</i> é um tipo de servidor que fornece serviços para executar aplicações e disponibilizar conteúdo via internet.
+      A maioria dos servidores web utilizam sistemas robustos como o Apache, baseados em Linux e de distribuição gratuita, principalmente
+       pela segurança e grande quantidade de ferramentas disponíveis para criação, gerenciamento e publicação de sites.</p>
+
+    <h2 id="introducao-html">Introdução ao HTML na Prática</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h3 id="estrutura-basica">Como é uma estrutura básica de um HTML?</h3>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. É possível compreender o 
+      documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+    <ul>
+        <li>Definição do documento (doctype)</li>
+        <li>Cabeça (head)</li>
+        <li>Corpo (body)</li>
+    </ul>
+
+    <h4>Doctype - Definindo o documento</h4>
+    <p>O <u>doctype</u> não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, 
+      que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível.</p>
+    <h4>HEAD</h4>
+    <p>O <u>HEAD</u> Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, 
+      de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. 
+      Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag <strong>head</strong>.</p>
+    <h4>BODY</h4>
+    <p>O <u>BODY</u> Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer
+      texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc).</p>
+    
+    <h3 id="tags-atributos">Falando sobre Tags e Atributos das Tags</h3>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p><u><strong>Tags</strong></u> são o conjunto de caracteres que formam um elemento e <u><strong>Elementos</strong></u> são formados
+      a partir de Tags e entre as Tags é que está o conteúdo do Elemento.</p>
+    <p><u><strong>Atributos</strong></u> são informações que passamos na Tag para que ela se comporte da maneira esperada. Os Atributos possuem nome e um valor, 
+      existem Atributos que você vai usar praticamente sempre e existem outros que serão mais raros.</p>
+      
+    <h3 id="textos">Textos</h3>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>As Tags <u><strong>h1, h2, h3, h4, h5 e h6</strong></u> são padrão para títulos. Estas tags já estão formatadas em negrito e com uma letra maior do que a do texto convencional. 
+      A única diferença entre estas tags é que a h1 possui a maior tamanho de letra e a letra vai diminuindo de tamanho até chegar até a h6, que possui o menor tamanho de letra.</p>
+    <p>A tag <u><strong>p</strong></u> tem a função de formatar um bloco de texto como parágrafo.</p>
+    <p>As Tags <u><strong>strong, i e u</strong></u> colocam o texto em negrito, italico e sublinhado respectivamente.</p>   
+
+    <h3 id="listas">Listas ordenadas e não ordenadas</h3>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>Existem dois tipos de listas, as <strong>Não ordenadas</strong>, que contêm uma série de itens sem numeração, e as <strong>Ordenadas</strong>,
+      que atribuem um número ou letra para cada elemento da lista. <strong><abbr title="Unordered List">UL</abbr></strong> é o comando usado para gerar lista não ordenada. 
+      Ele deve envolver o primeiro e o último item da lista. <strong><abbr title="Ordered List">OL</abbr></strong> consiste no comando para a lista ordenadaa de itens 
+      com números, letras maiúscula ou minúscula e algarismos romanos.</p>
+    
+    <h2 id="referencias">Links de referências</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <ul>
+        <li><a href="https://dio.me" target="_blank">https://dio.me</a></li>
+        <li><a href="https://www.w3.org/" target="_blank">https://w3c.org</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a></li>
+    </ul>
+
+</body>
+</html>
